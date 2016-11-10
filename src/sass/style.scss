@@ -1,0 +1,6 @@
+/** Exports to ../css/style.css **/
+
+/** Foundation **/
+@import 'foundation/_foundation';
+@import 'foundation/_global';
+@include foundation-everything;
