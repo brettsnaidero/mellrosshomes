@@ -7,7 +7,9 @@ header .above {
 	background-color: #343434;
 	color: #FFFFFF;
 	padding: 0.375rem;
+}
 
+header .contain {
 	@supports (display: flex) {
 		display: flex;
 	}
@@ -110,4 +112,29 @@ header .above .search-field button {
 header .below {
   padding: 40px 0;
   background-color: #FFF;
+}
+
+header .below .phone {
+    float: right;
+    color: #000;
+    padding: 16px 20px;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header a.logo {
+    display: block;
+    text-decoration: none;
+    float: left;
+    position: relative;
+}
+
+header a.logo .tagline {
+    color: #435158;
+    position: absolute;
+    top: 100%;
+    margin-top: 2px;
+    right: 20px;
+    font-size: 14px;
 }

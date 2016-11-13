@@ -1213,6 +1213,12 @@ button {
     margin-right: 0;
     float: left; } }
 
+body {
+  background-color: #262938; }
+
+.main-area {
+  background-color: #FFF; }
+
 svg {
   display: inline-block;
   width: 16px;
@@ -1229,11 +1235,12 @@ header .above {
   background-color: #343434;
   color: #FFFFFF;
   padding: 0.375rem; }
-  @supports (display: flex) {
-    header .above {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+
+@supports (display: flex) {
+  header .contain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 /* Right aligned items */
 @supports (display: flex) {
@@ -1318,6 +1325,35 @@ header .below {
   padding: 40px 0;
   background-color: #FFF; }
 
+header .below .phone {
+  float: right;
+  color: #000;
+  padding: 16px 20px;
+  background-color: #EFEFEF;
+  border-radius: 5px;
+  text-decoration: none; }
+
+header a.logo {
+  display: block;
+  text-decoration: none;
+  float: left;
+  position: relative; }
+
+header a.logo .tagline {
+  color: #435158;
+  position: absolute;
+  top: 100%;
+  margin-top: 2px;
+  right: 20px;
+  font-size: 14px; }
+
+footer {
+  background-color: #262938;
+  padding: 40px 0; }
+
+footer p {
+  color: #bbbcc1; }
+
 .listings a.listing {
   display: block;
   text-decoration: none;
@@ -1360,5 +1396,11 @@ header .below {
   width: 16px;
   height: 16px;
   fill: #9aa6af; }
+
+.home-banner {
+  height: 520px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center; }
 
 /*# sourceMappingURL=maps/style.css.map */

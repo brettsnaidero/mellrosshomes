@@ -6,6 +6,14 @@
 @import 'foundation/_global';
 @include foundation-everything;
 
+body {
+    background-color: #262938;
+}
+
+.main-area {
+    background-color: #FFF;
+}
+
 svg {
   display: inline-block;
   width: 16px;
@@ -15,4 +23,6 @@ svg {
 
 /** Elements **/
 @import 'elements/_header';
+@import 'elements/_footer';
 @import 'elements/_listings';
+@import 'elements/_homebanner';
