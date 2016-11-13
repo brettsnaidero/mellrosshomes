@@ -1,6 +1,18 @@
 /** Exports to ../css/style.css **/
+@import '_reset';
 
 /** Foundation **/
 @import 'foundation/_foundation';
 @import 'foundation/_global';
 @include foundation-everything;
+
+svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: currentColor;
+}
+
+/** Elements **/
+@import 'elements/_header';
+@import 'elements/_listings';

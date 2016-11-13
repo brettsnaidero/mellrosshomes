@@ -1,0 +1,53 @@
+.listings {
+
+}
+
+.listings a.listing {
+  display: block;
+  text-decoration: none;
+  margin: 1em 0;
+  position: relative;
+
+}
+
+.listings a.listing .image {
+  position: relative;
+  padding-left: 1em;
+}
+
+.listings a.listing .caption {
+  position: absolute;
+  bottom: -0.75em;
+  left: 0;
+  max-width: 75%;
+}
+
+.listings a.listing .title {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding: 0.25em 0;
+  background-color: #5342a9;
+  border: 1px solid #5342a9;
+  box-shadow: 12px 0 0 #5342a9,-12px 0 0 #5342a9;
+  color: #fff;
+  max-width: 50%;
+  display: inline;
+}
+
+.listings a.listing .subtitle {
+  font-size: 1.125rem;
+  margin-top: 1.25em;
+  color: #9aa6af;
+}
+
+.listings a.listing .subtitle span {
+  display: inline-block;
+  margin: 0 0.5em 0.5em 0;
+}
+
+.listings a.listing .subtitle svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  fill: #9aa6af;
+}
