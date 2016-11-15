@@ -1,5 +1,6 @@
 .listings {
-
+    background-color: #d9eaf6;
+    padding: 50px 0;
 }
 
 .listings a.listing {
@@ -37,17 +38,18 @@
 .listings a.listing .subtitle {
   font-size: 1.125rem;
   margin-top: 1.25em;
-  color: #9aa6af;
+  color: #162a48;
 }
 
 .listings a.listing .subtitle span {
   display: inline-block;
+  line-height: 24px;
   margin: 0 0.5em 0.5em 0;
 }
 
 .listings a.listing .subtitle svg {
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  fill: #9aa6af;
+  width: 24px;
+  height: 24px;
+  fill: #162a48;
 }
