@@ -1,6 +1,21 @@
 .listings {
-    background-color: #d9eaf6;
+    background-color: #FFFFFF;
     padding: 50px 0;
+}
+
+.listings .sec-title {
+  font-size: 22px;
+  color: $purple;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.listings .sec-title a {
+  float: right;
+  color: $teal;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .listings a.listing {
@@ -8,48 +23,83 @@
   text-decoration: none;
   margin: 1em 0;
   position: relative;
+  transition: all 0.3s ease;
+}
 
+.listings a.listing:hover,
+.listings a.listing:focus {
+  box-shadow: 0 2px 28px 0 rgba(0,0,0,.5);
 }
 
 .listings a.listing .image {
   position: relative;
-  padding-left: 1em;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg,transparent 0,rgba(22,30,32,.65));
+  }
 }
 
 .listings a.listing .caption {
   position: absolute;
-  bottom: -0.75em;
+  bottom: 0;
   left: 0;
-  max-width: 75%;
+  width: 100%;
+  padding: 1rem;
+  z-index: 2;
 }
 
 .listings a.listing .title {
   font-size: 1.25rem;
   line-height: 2rem;
-  padding: 0.25em 0;
-  background-color: #5342a9;
-  border: 1px solid #5342a9;
-  box-shadow: 12px 0 0 #5342a9,-12px 0 0 #5342a9;
   color: #fff;
-  max-width: 50%;
-  display: inline;
 }
 
-.listings a.listing .subtitle {
+.listings a.listing .sub {
+    border: 1px solid rgba(0,0,0,.06);
+}
+
+.listings a.listing .property-info {
+    padding: 20px;
+    font-size: 1.125rem;
+    color: $black;
+}
+
+.listings a.listing .property-info span.price {
+  color: $purple;
+  font-weight: bold;
+}
+
+.listings a.listing .property-info span.size {
+}
+
+.listings a.listing .sub .details {
   font-size: 1.125rem;
   margin-top: 1.25em;
   color: #162a48;
+  padding: 20px;
+  border-top: 1px solid rgba(0,0,0,.06);
 }
 
-.listings a.listing .subtitle span {
+.listings a.listing .sub .details span {
   display: inline-block;
   line-height: 24px;
-  margin: 0 0.5em 0.5em 0;
+  margin: 0 1em 0 0;
+  position: relative;
+  padding-left: 30px;
 }
 
-.listings a.listing .subtitle svg {
-  display: inline-block;
+.listings a.listing .sub .details svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -12px;
   width: 24px;
   height: 24px;
-  fill: #162a48;
+  fill: $teal;
 }
