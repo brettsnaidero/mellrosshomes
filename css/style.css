@@ -1945,13 +1945,9 @@ footer nav li a {
   line-height: 1.5rem;
   color: #FFFFFF;
   background: #7f3f98;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
   text-decoration: none;
   background-color: #6863ce;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  margin-top: -1.75rem;
   z-index: 4;
   cursor: pointer;
   display: none; }
@@ -1985,5 +1981,18 @@ footer nav li a {
   margin-bottom: 1rem;
   font-size: 0.875rem;
   color: #FFF; }
+
+.home {
+  padding: 3em 0;
+  background-color: #FFFFFF; }
+
+.homebit {
+  margin: 1em 0; }
+
+.homebit h3 {
+  font-weight: bold; }
+
+.homebit svg {
+  fill: #6863ce; }
 
 /*# sourceMappingURL=maps/style.css.map */

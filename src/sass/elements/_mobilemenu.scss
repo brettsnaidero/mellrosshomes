@@ -117,15 +117,11 @@
 	line-height: 1.5rem;
 	color: #FFFFFF;
 	background: #7f3f98;
-	border-radius: 0 5px 5px 0;
+	border-radius: 5px;
 	text-decoration: none;
 
 	background-color: $purple;
 
-	position: absolute;
-	top: 50%;
-	left: 0;
-	margin-top: -1.75rem;
 	z-index: 4;
 	cursor: pointer;
 
@@ -160,7 +156,7 @@
 		display: block;
 	}
 }
- 
+
 /* Sub */
 .offcanvas .sub {
 	margin-bottom: 1rem;
