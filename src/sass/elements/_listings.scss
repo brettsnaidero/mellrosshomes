@@ -1,16 +1,16 @@
 .listings {
-    background-color: #FFFFFF;
-    padding: 50px 0;
+  background-color: #FFF;
+  padding: 3em 0;
 }
 
-.listings .sec-title {
+.sec-title {
   font-size: 22px;
   color: $purple;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.listings .sec-title a {
+.sec-title a {
   float: right;
   color: $teal;
   text-decoration: none;
@@ -18,7 +18,7 @@
   font-weight: normal;
 }
 
-.listings a.listing {
+a.listing {
   display: block;
   text-decoration: none;
   margin: 1em 0;
@@ -26,12 +26,12 @@
   transition: all 0.3s ease;
 }
 
-.listings a.listing:hover,
-.listings a.listing:focus {
+a.listing:hover,
+a.listing:focus {
   box-shadow: 0 2px 28px 0 rgba(0,0,0,.5);
 }
 
-.listings a.listing .image {
+a.listing .image {
   position: relative;
 
   &:after {
@@ -45,7 +45,7 @@
   }
 }
 
-.listings a.listing .caption {
+a.listing .caption {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -54,31 +54,31 @@
   z-index: 2;
 }
 
-.listings a.listing .title {
+a.listing .title {
   font-size: 1.25rem;
   line-height: 2rem;
   color: #fff;
 }
 
-.listings a.listing .sub {
+a.listing .sub {
     border: 1px solid rgba(0,0,0,.06);
 }
 
-.listings a.listing .property-info {
+a.listing .property-info {
     padding: 20px;
     font-size: 1.125rem;
     color: $black;
 }
 
-.listings a.listing .property-info span.price {
+a.listing .property-info span.price {
   color: $purple;
   font-weight: bold;
 }
 
-.listings a.listing .property-info span.size {
+a.listing .property-info span.size {
 }
 
-.listings a.listing .sub .details {
+a.listing .sub .details {
   font-size: 1.125rem;
   margin-top: 1.25em;
   color: #162a48;
@@ -86,7 +86,7 @@
   border-top: 1px solid rgba(0,0,0,.06);
 }
 
-.listings a.listing .sub .details span {
+a.listing .sub .details span {
   display: inline-block;
   line-height: 24px;
   margin: 0 1em 0 0;
@@ -94,7 +94,7 @@
   padding-left: 30px;
 }
 
-.listings a.listing .sub .details svg {
+a.listing .sub .details svg {
   position: absolute;
   top: 50%;
   left: 0;

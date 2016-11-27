@@ -28,7 +28,8 @@ gulp.task('js', () => {
   return gulp.src([
 		'./node_modules/svg4everybody/dist/svg4everybody.js',
 		'./src-js/offCanvas.js',
-		'./src-js/page.js'
+		'./src-js/page.js',
+    './src-js/home.js'
 	])
         // .pipe(babel({
         //     presets: [

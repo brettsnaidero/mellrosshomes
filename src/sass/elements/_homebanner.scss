@@ -25,7 +25,7 @@
 
 /* Home Slider */
 .slide {
-	padding-top: 30%;
+	padding-top: 35%;
 	position: relative;
 	background-color: #EFEFEF;
 }
@@ -43,7 +43,7 @@
   @supports (display: flex) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
 
@@ -53,8 +53,8 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 60%;
-  background: linear-gradient(90deg, rgba(22, 30, 32, 0.65) 0%, transparent 100%);
+  width: 100%;
+  background: linear-gradient(45deg, rgba(darken(#203140, 10%), 0.85) 0%, rgba(darken(#203140, 10%), 0) 80%);
 }
 
 .slide .overlay {
@@ -67,11 +67,11 @@
 @keyframes show {
 	0% {
 		opacity: 0;
-		transform: translateY(100px);
+		transform: translateX(-50px);
 	}
 	100% {
 		opacity: 1;
-		transform: translateY(0px);
+		transform: translateX(0px);
 	}
 }
 
@@ -82,16 +82,27 @@
 	font-size: 1rem;
     line-height: 1;
     white-space: normal;
+		// text-align: center;
+}
+
+.slide .caption .break {
+	height: 2px;
+	width: 100px;
+	background-color: $teal;
+	background: linear-gradient(to right, $purple 0%, $teal 100%);
+	margin: 20px 0 20px 0;
 }
 
 .slide .caption h2 {
-	font-size: 3rem;
+	font-size: 3.5rem;
 }
 
 .slide .caption p {
 	font-size: 1.125rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 	line-height: 1.5;
-	margin-top: 0.5rem;
+	margin-top: 1.5rem;
 }
 
 .slide .caption a.go {
@@ -132,12 +143,12 @@
 	    display: inline-block;
 		width: 100%;
 	}
-
+}
+.home-banner {
 	.prev,
 	.next {
     position: absolute;
-    top: 50%;
-    margin-top: -25px;
+    bottom: 0px;
     display: block;
     cursor: pointer;
     width: 50px;
@@ -150,13 +161,11 @@
 		background-color: $teal;
 	}
 	.prev {
-	    left: 0;
-		border-radius: 0 10px 10px 0;
+	    right: 50px;
 	}
 
 	.next {
 	    right: 0;
-		border-radius: 10px 0 0 10px;
 	}
 
 	.next svg,

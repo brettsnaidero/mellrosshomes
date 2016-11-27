@@ -61,47 +61,35 @@
 							Contact Us
 						</a>
 					</li>
-					<li>
-						<a href="#" title="KidzWish Raffle">
-							KidzWish Raffle
-						</a>
-					</li>
 				</ul>
 			</nav>
 			<!-- Social -->
 			<ul class="social">
 				<li>
-					<a href="#" title="LinkedIn">
-						<svg>
-							<use xlink:href="images/icons.svg#linkedin">
-						</svg>
-					</a>
-				</li>
-				<li>
 					<a href="#" title="Facebook">
 						<svg>
-							<use xlink:href="images/icons.svg#facebook">
+							<use xlink:href="img/icons.svg#facebook">
 						</svg>
 					</a>
 				</li>
 				<li>
 					<a href="#" title="Instagram">
 						<svg>
-							<use xlink:href="images/icons.svg#instagram">
+							<use xlink:href="img/icons.svg#instagram">
 						</svg>
 					</a>
 				</li>
 				<li>
 					<a href="#" title="Twitter">
 						<svg>
-							<use xlink:href="images/icons.svg#twitter">
+							<use xlink:href="img/icons.svg#twitter">
 						</svg>
 					</a>
 				</li>
 				<li>
 					<a href="#" title="Youtube">
 						<svg>
-							<use xlink:href="images/icons.svg#youtube">
+							<use xlink:href="img/icons.svg#youtube">
 						</svg>
 					</a>
 				</li>
@@ -118,7 +106,7 @@
 				<input type="search" placeholder="Search...">
 				<button type="submit">
 					<svg>
-						<use xlink:href="images/icons.svg#search">
+						<use xlink:href="img/icons.svg#search">
 					</svg>
 				</button>
 			</div>
@@ -129,47 +117,42 @@
 			<div class="main-area">
 				<!-- Header -->
 				<header>
-					<!-- Above -->
-					<section class="above">
+					<div class="bottomborder"></div>
+					<!-- Below -->
+					<section class="below">
 						<div class="row">
 							<div class="large-12 columns">
-								<div class="contain">
-									<!-- Secondary/Small Nav -->
-									<nav>
-										<ul>
-											<li class="current">
-												<a href="#" title="Home">
-													Home
-												</a>
-											</li>
-											<li>
-												<a href="#" title="Client Area">
-													Client Area
-												</a>
-											</li>
-											<li>
-												<a href="#" title="Tips and Tools">
-													Tips &amp; Tools
-												</a>
-											</li>
-											<li>
-												<a href="#" title="Contact Us">
-													Contact Us
-												</a>
-											</li>
-										</ul>
-									</nav>
-									<!-- Right aligned items -->
-									<div class="header-above-right">
+								<!-- Logo -->
+								<a href="#" title="?" class="logo">
+									<picture>
+										<source
+											media="(min-width: 650px)"
+											srcset="img/logo-half.png">
+										<source
+											media="(min-width: 465px)"
+											srcset="img/logo.png">
+										<img
+											src="img/logo.png"
+											alt="a cute kitten">
+									</picture>
+									<!-- -->
+									<!-- <div class="tagline">Cut costs, not quality</div> -->
+								</a>
+
+								<!-- Right items -->
+								<div class="right-items">
+									<!-- Left Menu Button -->
+									<a id="trigger-left-menu" class="nav-button left" offcanvas-menu="offcanvas-left-menu">
+										<span class="label">Open Menu</span>
+										<span class="icon">
+											<span></span>
+											<span></span>
+											<span></span>
+										</span>
+									</a>
+									<div class="clearfix">
 										<!-- Social -->
 										<ul class="social">
-											<li>
-												<a href="#" title="Google">
-													<svg>
-														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#google">
-													</use></svg>
-												</a>
-											</li>
 											<li>
 												<a href="#" title="Facebook">
 													<svg>
@@ -195,10 +178,33 @@
 												<a href="#" title="Youtube">
 													<svg>
 														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#youtube">
-													</use></svg>
+														</use>
+													</svg>
 												</a>
 											</li>
 										</ul>
+										<!-- Nav -->
+										<nav>
+											<ul>
+												<li>
+													<a href="#" title="">
+														FAQ
+													</a>
+												</li>
+												<li>
+													<a href="#" title="">
+														Log In
+													</a>
+												</li>
+												<li>
+													<a href="#" title="">
+														Contact Us
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+									<div class="clearfix">
 										<!-- Search -->
 										<div class="search-field">
 											<input type="search" placeholder="Search...">
@@ -208,36 +214,7 @@
 												</use></svg>
 											</button>
 										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<!-- Below -->
-					<section class="below">
-						<div class="row">
-							<div class="large-12 columns">
-								<!-- Logo -->
-								<a href="#" title="?" class="logo">
-									<picture>
-										<source
-											media="(min-width: 650px)"
-											srcset="img/logo-half.png">
-										<source
-											media="(min-width: 465px)"
-											srcset="img/logo.png">
-										<img
-											src="img/logo.png"
-											alt="a cute kitten">
-									</picture>
-									<!-- -->
-									<!-- <div class="tagline">Cut costs, not quality</div> -->
-								</a>
-
-								<!-- Right items -->
-								<div class="right-items">
-									<!-- Phone -->
-									<div class="header-ctoa">
+										<!-- Phone -->
 										<a class="phone" href="#">
 											<svg>
 												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#phone"></use>
@@ -245,75 +222,77 @@
 											02 6382 5350
 										</a>
 									</div>
-									<!-- Left Menu Button -->
-									<a id="trigger-left-menu" class="nav-button left" offcanvas-menu="offcanvas-left-menu">
-										<span class="label">Open Menu</span>
-										<span class="icon">
-											<span></span>
-											<span></span>
-											<span></span>
-										</span>
-									</a>
-									<!-- Main Nav -->
-									<nav>
-										<ul>
-											<li>
-												<a href="#" title="">
-													Building With Us
-													<!-- Needed for dropdown -->
-													<div class="dropdown-connector"></div>
-												</a>
-												<!-- Dropdown Example -->
-												<div class="dropdown">
-													<!-- <div class="bg" style="background-image: url('images/slider.jpg');"></div> -->
-													<ul>
-														<li>
-															<a href="#" title="">
-																Overview
-															</a>
-														</li>
-														<li>
-															<a href="#" title="">
-																Ambassadors and friends
-															</a>
-														</li>
-														<li>
-															<a href="#" title="">
-																Corporate sponsors and partners
-															</a>
-														</li>
-														<li>
-															<a href="#" title="">
-																Fundraising campaigns
-															</a>
-														</li>
-														<li>
-															<a href="#" title="">
-																Year in review
-															</a>
-														</li>
-													</ul>
-												</div>
-											</li>
-											<li>
-												<a href="#" title="">
-													Home Designs
-												</a>
-											</li>
-											<li>
-												<a href="#" title="">
-													Quality Inclusions
-												</a>
-											</li>
-											<li>
-												<a href="#" title="">
-													Home &amp; Land Packages
-												</a>
-											</li>
-										</ul>
-									</nav>
 								</div>
 								<!-- End right items -->
+							</div>
+						</div>
+					</section>
+					<section class="primary-nav">
+						<div class="row">
+							<div class="large-12 columns">
+								<!-- Main Nav -->
+								<nav>
+									<ul>
+										<li class="current">
+											<a href="#" title="">
+												Home
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												Building With Us
+											</a>
+											<!-- Dropdown Example -->
+											<ul class="dropdown">
+												<li>
+													<a href="#" title="">
+														Overview
+													</a>
+												</li>
+												<li>
+													<a href="#" title="">
+														Ambassadors and friends
+													</a>
+												</li>
+												<li>
+													<a href="#" title="">
+														Corporate sponsors and partners
+													</a>
+												</li>
+												<li>
+													<a href="#" title="">
+														Fundraising campaigns
+													</a>
+												</li>
+												<li>
+													<a href="#" title="">
+														Year in review
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#" title="">
+												Home Designs
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												Quality Inclusions
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												Home &amp; Land Packages
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												Tips &amp; tools
+											</a>
+										</li>
+									</ul>
+								</nav>
 							</div>
 						</div>
 					</section>
@@ -331,11 +310,11 @@
 													<div class="image" style="background-image: url('img/photo.jpg');">
 														<div class="overlay">
 															<div class="row">
-																<div class="large-4 medium-6 columns">
+																<div class="large-6 columns">
 																	<div class="caption">
-																		<h2>Slide title</h2>
-																		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-																		<a class="go" href="#" title="">Button Here</a>
+																		<h2>Build with confidence</h2>
+																		<div class="break"></div>
+																		<p>Building quality homes</p>
 																	</div>
 																</div>
 															</div>
@@ -348,11 +327,11 @@
 													<div class="image" style="background-image: url('img/photo.jpg');">
 														<div class="overlay">
 															<div class="row">
-																<div class="large-4 medium-6 columns">
+																<div class="large-6 columns">
 																	<div class="caption">
-																		<h2>Slide title</h2>
-																		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-																		<a class="go" href="#" title="">Button Here</a>
+																		<h2>Build with confidence</h2>
+																		<div class="break"></div>
+																		<p>Building quality homes</p>
 																	</div>
 																</div>
 															</div>
@@ -363,235 +342,171 @@
 	                  </ul>
 	                </div>
 	                <span class="js_prev prev">
-	                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
 	                </span>
 	                <span class="js_next next">
-	                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
 	                </span>
 	            </div>
 					</div>
 				</section>
 
 				<!-- Home Things -->
-				<section class="home-accordion">
-					<div class="title-bar">
-						<h2>Our Projects</h2>
-						<a href="#" class="">View All Projects</a>
-					</div>
-				</section>
-
-				<!-- Home Things -->
 				<section class="home">
 					<div class="row">
-						<div class="large-4 medium-4 columns">
-							<div class="homebit">
-								<div class="icon">
-									<svg>
-										<use xlink:href="images/icons.svg#electric-tower">
-									</svg>
-								</div>
-								<h3>Browse Our Designs</h3>
-								<p>Have a look at our Investor, Urban and Homestead Designs</p>
+						<div class="large-5 medium-6 columns">
+							<div class="content">
+								<h2>Who we are</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<a class="grad-button" href="#">Find out more</a>
 							</div>
 						</div>
-						<div class="large-4 medium-4 columns">
-							<div class="homebit">
-								<div class="icon"></div>
-								<h3>Quality Inclusions</h3>
-								<p>All of our homes are packed with quality standards inclusions.</p>
-							</div>
-						</div>
-						<div class="large-4 medium-4 columns">
-							<div class="homebit">
-								<div class="icon"></div>
-								<h3>Client Area</h3>
-								<p>Log in to complete selections and download forms.</p>
-							</div>
-						</div>
-						<div class="desktop-clear"></div>
-						<div class="large-4 medium-4 columns">
-							<div class="homebit">
-								<div class="icon"></div>
-								<h3>The Building Process</h3>
-								<p>Check out how we can build your home</p>
-							</div>
-						</div>
-						<div class="large-4 medium-4 columns">
-							<div class="homebit">
-								<div class="icon"></div>
-								<h3>Home &amp; Land Packages</h3>
-								<p>View our great value house and land package options.</p>
-							</div>
-						</div>
-						<div class="large-4 medium-4 columns">
-							<div class="homebit">
-								<div class="icon"></div>
-								<h3>Make an Enquiry</h3>
-								<p>Enquire about a design, your building project or pricing.</p>
+						<div class="large-6 medium-6 columns">
+							<div class="image">
+								<img src="img/big.jpg" alt="">
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<!-- Three Things -->
-				<div class="listings">
-					<div class="row">
-						<div class="large-12 columns">
-							<div class="sec-title">
-								New Home and Land Packages
-								<a class="" href="#" title="">See All</a>
+				<!-- Home Table -->
+				<section class="home-table">
+						<a href="#" class="homebit">
+							<div class="icon">
+								<svg>
+									<use xlink:href="img/icons.svg#house">
+								</svg>
 							</div>
-						</div>
+							<h3>Browse Our Designs</h3>
+							<p>Have a look at our Investor, Urban and Homestead Designs</p>
+						</a>
+
+						<a href="#" class="homebit">
+							<div class="icon">
+								<svg>
+									<use xlink:href="img/icons.svg#home">
+								</svg>
+							</div>
+							<h3>Quality Inclusions</h3>
+							<p>All of our homes are packed with quality standards inclusions.</p>
+						</a>
+
+						<a href="#" class="homebit">
+							<div class="icon">
+								<svg>
+									<use xlink:href="img/icons.svg#key">
+								</svg>
+							</div>
+							<h3>Client Area</h3>
+							<p>Log in to complete selections and download forms.</p>
+						</a>
+
+						<a href="#" class="homebit">
+							<div class="icon">
+								<svg>
+									<use xlink:href="img/icons.svg#house-3">
+								</svg>
+							</div>
+							<h3>The Building Process</h3>
+							<p>Check out how we can build your home</p>
+						</a>
+
+						<a href="#" class="homebit">
+							<div class="icon">
+								<svg>
+									<use xlink:href="img/icons.svg#house-1">
+								</svg>
+							</div>
+							<h3>Home &amp; Land Packages</h3>
+							<p>View our great value house and land package options.</p>
+						</a>
+
+						<a href="#" class="homebit">
+							<div class="icon">
+								<svg>
+									<use xlink:href="img/icons.svg#chat">
+								</svg>
+							</div>
+							<h3>Make an Enquiry</h3>
+							<p>Enquire about a design, your building project or pricing.</p>
+						</a>
+
+				</section>
+
+				<!-- Home Accordion -->
+				<section class="home-accordion">
+					<div class="title-bar">
+						<h2>Home and Land Packages</h2>
+						<a href="#" class="button">View All Packages</a>
 					</div>
-					<div class="row">
-						<div class="large-3 columns">
-							<a class="listing" href="#" title="Title">
-								<div class="image">
-									<img src="img/photo.jpg">
-									<div class="caption">
-										<div class="title">Lot 50 Jordan Place, Young</div>
-									</div>
-								</div>
-								<div class="sub">
-									<div class="property-info">
-										<span class="price">$398,500</span> &middot; <span class="size">246.20sq. m.</span>
-									</div>
-									<div class="details">
-										<span class="bath">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#bathtub"></use>
-											</svg>
-											4
-										</span>
-										<span class="parking">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#car"></use>
-											</svg>
-											4
-										</span>
-										<span class="bed">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#bed"></use>
-											</svg>
-											4
-										</span>
-									</div>
-								</div>
-							</a>
+					<div class="accordion js_slider">
+						<div class="frame js_frame">
+							<ul class="slides js_slides">
+								<li class="js_slide">
+									<a href="#" class="accordion-element" title="Place">
+										<img src="img/1.jpg" alt="" />
+										<div class="overlay">
+											<div class="name">Lot 50 Jordan Place, Young</div>
+											<div class="sub">$395,500</div>
+										</div>
+									</a>
+								</li>
+								<li class="js_slide">
+									<a href="#" class="accordion-element" title="Place">
+										<img src="img/2.jpg" alt="" />
+										<div class="overlay">
+											<div class="name">Lot 50 Jordan Place, Young</div>
+											<div class="sub">$395,500</div>
+										</div>
+									</a>
+								</li>
+								<li class="js_slide">
+									<a href="#" class="accordion-element" title="Place">
+										<img src="img/3.jpg" alt="" />
+										<div class="overlay">
+											<div class="name">Lot 50 Jordan Place, Young</div>
+											<div class="sub">$395,500</div>
+										</div>
+									</a>
+								</li>
+								<li class="js_slide">
+									<a href="#" class="accordion-element" title="Place">
+										<img src="img/1.jpg" alt="" />
+										<div class="overlay">
+											<div class="name">Lot 50 Jordan Place, Young</div>
+											<div class="sub">$395,500</div>
+										</div>
+									</a>
+								</li>
+								<li class="js_slide">
+									<a href="#" class="accordion-element" title="Place">
+										<img src="img/2.jpg" alt="" />
+										<div class="overlay">
+											<div class="name">Lot 50 Jordan Place, Young</div>
+											<div class="sub">$395,500</div>
+										</div>
+									</a>
+								</li>
+							</ul>
 						</div>
-						<div class="large-3 columns">
-							<a class="listing" href="#" title="Title">
-								<div class="image">
-									<img src="img/photo.jpg">
-									<div class="caption">
-										<div class="title">Lot 50 Jordan Place, Young</div>
-									</div>
-								</div>
-								<div class="sub">
-									<div class="property-info">
-										<span class="price">$398,500</span> &middot; <span class="size">246.20sq. m.</span>
-									</div>
-									<div class="details">
-										<span class="bath">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#bathtub"></use>
-											</svg>
-											4
-										</span>
-										<span class="parking">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#car"></use>
-											</svg>
-											4
-										</span>
-										<span class="bed">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#bed"></use>
-											</svg>
-											4
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="large-3 columns">
-							<a class="listing" href="#" title="Title">
-								<div class="image">
-									<img src="img/photo.jpg">
-									<div class="caption">
-										<div class="title">Lot 50 Jordan Place, Young</div>
-									</div>
-								</div>
-								<div class="sub">
-									<div class="property-info">
-										<span class="price">$398,500</span> &middot; <span class="size">246.20sq. m.</span>
-									</div>
-									<div class="details">
-										<span class="bath">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#bathtub"></use>
-											</svg>
-											4
-										</span>
-										<span class="parking">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#car"></use>
-											</svg>
-											4
-										</span>
-										<span class="bed">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#bed"></use>
-											</svg>
-											4
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="large-3 columns">
-							<a class="listing" href="#" title="Title">
-								<div class="image">
-									<img src="img/photo.jpg">
-									<div class="caption">
-										<div class="title">Lot 50 Jordan Place, Young</div>
-									</div>
-								</div>
-								<div class="sub">
-									<div class="property-info">
-										<span class="price">$398,500</span> &middot; <span class="size">246.20sq. m.</span>
-									</div>
-									<div class="details">
-										<span class="bath">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#bathtub"></use>
-											</svg>
-											4
-										</span>
-										<span class="parking">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#car"></use>
-											</svg>
-											4
-										</span>
-										<span class="bed">
-											<svg>
-												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#bed"></use>
-											</svg>
-											4
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
+						<span class="js_prev prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
+            </span>
+            <span class="js_next next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
+            </span>
 					</div>
-				</div>
+				</section>
 
 				<!-- Footer -->
 				<footer>
 					<div class="row">
 						<div class="large-3 columns">
-							<p>Copyright &copy; Mellross Homes Pty Ltd<br>LIC NO: 1287C ABN: 18 966 366 993</p>
+
+							<a class="footer-logo" href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+
 						</div>
 						<div class="large-3 columns">
 							<!-- -->
@@ -600,32 +515,22 @@
 								<ul>
 									<li>
 										<a href="#" title="Client Area">
-											Client Area
+											Building With Us
 										</a>
 									</li>
 									<li>
 										<a href="#" title="Client Area">
-											Client Area
+											Home Designs
 										</a>
 									</li>
 									<li>
 										<a href="#" title="Client Area">
-											Client Area
+											Quality Inclusions
 										</a>
 									</li>
 									<li>
 										<a href="#" title="Client Area">
-											Client Area
-										</a>
-									</li>
-									<li>
-										<a href="#" title="Client Area">
-											Client Area
-										</a>
-									</li>
-									<li>
-										<a href="#" title="Client Area">
-											Client Area
+											Home and Land Packages
 										</a>
 									</li>
 								</ul>
@@ -633,7 +538,7 @@
 						</div>
 						<div class="large-3 columns">
 							<!-- -->
-							<h3>Navigate</h3>
+							<h3>Tools and Services</h3>
 							<nav>
 								<ul>
 									<li>
@@ -643,22 +548,17 @@
 									</li>
 									<li>
 										<a href="#" title="Client Area">
-											Client Area
+											Tips and Tools
 										</a>
 									</li>
 									<li>
 										<a href="#" title="Client Area">
-											Client Area
+											FAQ
 										</a>
 									</li>
 									<li>
 										<a href="#" title="Client Area">
-											Client Area
-										</a>
-									</li>
-									<li>
-										<a href="#" title="Client Area">
-											Client Area
+											Contact Us
 										</a>
 									</li>
 								</ul>

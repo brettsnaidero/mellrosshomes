@@ -1,17 +1,218 @@
+/* Home accordion */
+.home-accordion {
+
+}
+
+.home-accordion .title-bar {
+  padding: 32px;
+  position: relative;
+  background-color: #EFEFEF;
+}
+
+.home-accordion .title-bar h2 {
+  padding: 10px 0;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.home-accordion .title-bar h2 a {
+  text-decoration: none;
+  color: $purple;
+}
+
+.home-accordion .title-bar a.button {
+  display: block;
+  padding: 10px 16px;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $teal;
+  background-color: $teal;
+  color: #FFF;
+  text-decoration: none;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+
+  &:hover {
+    background-color: $purple;
+  }
+}
+
+.home-accordion a.accordion-element {
+  display: block;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.home-accordion a.accordion-element img {
+  display: block;
+  width: 100%;
+}
+
+.home-accordion a.accordion-element .overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding: 30px;
+  color: #FFF;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1;
+  background: linear-gradient(to bottom, rgba(#000,0) 0%, rgba(#000,0.5) 100%);
+
+  transition: 0.5s all ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.home-accordion a.accordion-element .name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home-accordion a.accordion-element .sub {
+
+}
+
+.home-accordion a.accordion-element:hover .overlay {
+  bottom: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.home-accordion .js_slider li {
+  width: 25%;
+}
+
+.home-accordion {
+	.prev,
+	.next {
+    position: absolute;
+    top: 0;
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    height: 100%;
+    background-color: rgba(255,255,255,0.25);
+    transition: 0.5s all ease;
+	}
+	.prev:hover,
+	.next:hover {
+		background-color: $teal;
+	}
+	.prev {
+	    left: 0;
+	}
+
+	.next {
+	    right: 0;
+	}
+
+	.next svg,
+	.prev svg {
+	    width: 25px;
+  		height: 50px;
+  		fill: #FFFFFF;
+  		display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -25px;
+      left: 50%;
+      margin-left: -12.5px;
+	}
+
+	.prev:hover svg,
+	.next:hover svg {
+		// fill: $teal;
+	}
+}
+
+
+
+/* Home Call to actions */
 .home {
     padding: 3em 0;
     background-color: #FFFFFF;
 }
 
-.homebit {
-    margin: 1em 0;
+.home .image {
+  position: relative;
+  z-index: 2;
+
+  &:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, $purple 0%, $teal 100%);
+  }
+}
+
+.home-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a.homebit {
+    width: 33.333%;
+    display: block;
+    text-decoration: none;
+    padding: 60px 60px 60px 140px;
+    position: relative;
+    border-top: 1px solid #EFEFEF;
+
+    &:nth-child(3n - 1),
+    &:nth-child(3n - 2)  {
+      border-right: 1px solid #EFEFEF;
+    }
+}
+
+.homebit:hover {
+  background-color: #202a38;
+  color: #FFF;
+}
+
+.homebit .icon {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 60px;
+  height: 60px;
+
+  svg {
+    display: block;
+    width: 60px;
+    height: 60px;
+    fill: $teal;
+  }
+}
+
+.homebit:hover .icon svg {
+  fill: #FFF;
 }
 
 .homebit h3 {
-    font-weight: bold;
+    // font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $purple;
 }
 
-.homebit svg {
-    fill: $purple;
+.homebit:hover h3 {
+  color: #FFF;
 }
- 
+
+.homebit p {
+    color: #6d7073;
+    font-size: 1.125em;
+    line-height: 1.6;
+}
+
+.homebit:hover p {
+  color: #FFF;
+}

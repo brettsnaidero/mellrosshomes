@@ -1,0 +1,43 @@
+.page-banner {
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+
+  color: #FFF;
+  overflow: hidden;
+  text-align: center;
+}
+
+.page-banner .overlay {
+  // background-color: rgba(#3e4a5a,0.75);
+  padding: 3em 0;
+}
+
+.page-banner h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.page-banner .break {
+	height: 2px;
+	width: 100px;
+	background-color: $teal;
+	background: linear-gradient(to right, $purple 0%, $teal 100%);
+	margin: 20px auto 20px auto;
+}
+
+.page-banner .breadcrumbs {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+}
+
+.page-banner .breadcrumbs span {
+  opacity: 0.75;
+  margin: 0 10px;
+}
+
+.page-banner .breadcrumbs a {
+  color: #FFF;
+  text-decoration: none;
+}
