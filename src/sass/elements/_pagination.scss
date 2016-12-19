@@ -1,0 +1,110 @@
+/* Pagination */
+.pagination {
+	margin: 15px 0 30px 0;
+	text-align: center;
+}
+
+.pagination .showing span {
+	font-weight: bold;
+}
+
+.pagination ul {
+	margin: 20px 0 0 0;
+	font-size: 0;
+}
+
+.pagination li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	color: #222222;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	font-size: 1rem;
+
+	&:after {
+		content: none;
+	}
+}
+
+.pagination li a {
+	display: block;
+	padding: 12px 8px;
+	color: $red;
+	font-weight: bold;
+	cursor: pointer;
+	border: 1px solid #ced2d5;
+	border-right: none;
+	min-width: 40px;
+
+	&:hover {
+		background-color: $red;
+		color: #FFFFFF;
+	}
+}
+
+.pagination li:last-child a {
+	border-right: 1px solid #ced2d5;
+}
+
+.pagination li.selected a,
+.pagination li.selected a:hover {
+	background-color: transparent;
+	color: #1c1c1c;
+	cursor: auto;
+}
+
+.pagination li.prev a,
+.pagination li.next a {
+	color: $red;
+	padding: 12px 16px;
+	min-width: 140px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.pagination li.arrow.unavailable a {
+	background-color: #EFEFEF;
+	color: #9ca1a5;
+	cursor: auto;
+
+	&:hover {
+		background-color: #EFEFEF;
+		color: #9ca1a5;
+		cursor: auto;
+	}
+}
+
+.pagination li.prev a:hover,
+.pagination li.next a:hover {
+	background-color: $red;
+	color: #FFFFFF;
+}
+
+@media screen and (max-width: 920px) {
+	.pagination li {
+		display: none;
+	}
+	.pagination li.prev,
+	.pagination li.next {
+		display: block;
+	}
+	.pagination .showing .these {
+		float: none;
+		padding: 8px 0;
+	}
+	.pagination .showing .of {
+		float: none;
+		border: none;
+		border-top: 1px solid #dddddd;
+		padding: 8px 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.pagination li.prev,
+	.pagination li.next {
+		width: 100%;
+	}
+}

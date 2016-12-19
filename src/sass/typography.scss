@@ -1,0 +1,20 @@
+/** Exports to ../css/typography.css **/
+
+/*** Generic ***/
+@import "generic/_reset";
+
+/*** Settings ***/
+@import "settings/_settings";
+@import "objects/_content";
+
+body {
+  font-family: sans-serif;
+  line-height: 100%;
+  padding: 0px 16px;
+  padding: 0rem 1rem;
+}
+
+/* Typography */
+.typography {
+    @include content;
+}

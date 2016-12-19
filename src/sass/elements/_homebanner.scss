@@ -1,6 +1,5 @@
 .home-banner {
 	position: relative;
-	overflow: hidden;
 
 	&.loading {
 		.loader {
@@ -9,6 +8,119 @@
 			visibility: visible;
 		}
 	}
+}
+
+.home-slide {
+	padding-top: 50%;
+	background-position: center;
+	background-size: cover;
+}
+
+.home-banner .home-slide .caption {
+	opacity: 0;
+	visibility: 0;
+	bottom: auto;
+	top: 100%;
+}
+
+/* Overlay */
+.home-banner .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	color: #FFF;
+	text-align: center;
+	z-index: 2;
+	padding: 120px 0 40px 0;
+
+	@supports(display:flex) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.home-banner .overlay .overlay-content {
+	@supports (display: flex) {
+		animation: fade-in 1 0.6s ease-in-out;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+/* Banner Caption */
+.home-banner .caption {
+	display: block;
+	text-decoration: none;
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	color: #FFF;
+	line-height: 25px;
+	white-space: nowrap;
+
+	text-align: right;
+	z-index: 3;
+
+	transition: 0.5s all ease;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+.home-banner .caption .address {
+	font-weight: bold;
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.home-banner .overlay .overlay-content {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+
+	@supports (display: flex) {
+		position: static;
+		transform: none;
+	}
+}
+
+.home-banner .logo {
+	display: block;
+	width: 112px;
+	border: 2px solid #FFF;
+	margin: 0 auto 15px auto;
+	background-color: rgba(#1c1c1c,0.8);
+}
+
+.home-banner h1 {
+	color: #FFF;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.home-banner p {
+	color: #FFF;
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 1.4;
+	margin: 10px 0 20px 0;
 }
 
 .home-banner .loader {
@@ -23,197 +135,268 @@
 	z-index: 2;
 }
 
-/* Home Slider */
-.slide {
-	padding-top: 35%;
-	position: relative;
-	background-color: #EFEFEF;
-}
-
-.home-banner .slide .image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
-  @supports (display: flex) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-}
-
-.slide .image:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: linear-gradient(45deg, rgba(darken(#203140, 10%), 0.85) 0%, rgba(darken(#203140, 10%), 0) 80%);
-}
-
-.slide .overlay {
-  position: relative;
-  z-index: 2;
-	width: 100%;
-	animation: show 1s ease 1;
-}
-
-@keyframes show {
-	0% {
-		opacity: 0;
-		transform: translateX(-50px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
-
-.slide .caption {
-	padding: 3rem 0;
-	color: #FFFFFF;
-
-	font-size: 1rem;
-    line-height: 1;
-    white-space: normal;
-		// text-align: center;
-}
-
-.slide .caption .break {
-	height: 2px;
-	width: 100px;
-	background-color: $teal;
-	background: linear-gradient(to right, $purple 0%, $teal 100%);
-	margin: 20px 0 20px 0;
-}
-
-.slide .caption h2 {
-	font-size: 3.5rem;
-}
-
-.slide .caption p {
-	font-size: 1.125rem;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	line-height: 1.5;
-	margin-top: 1.5rem;
-}
-
-.slide .caption a.go {
-	display: inline-block;
-	text-align: center;
-	padding: 16px 20px;
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: #FFFFFF;
-	text-decoration: none;
-	border-radius: 5px;
-	margin-top: 1rem;
-  background-color: $teal;
-}
-
-/**
- * (optional) define here the style definitions which should be applied on the slider container
- * e.g. width including further controls like arrows etc.
- */
-.js_slider {
-	position: relative;
-
-	.frame {
-	    position: relative;
-	    font-size: 0;
-	    line-height: 0;
-	    overflow: hidden;
-	    white-space: nowrap;
-	}
-
-	.slides {
-	    display: inline-block;
-		width: 100%;
-	}
-
-	li {
-	    position: relative;
-	    display: inline-block;
-		width: 100%;
-	}
-}
 .home-banner {
-	.prev,
-	.next {
-    position: absolute;
-    bottom: 0px;
-    display: block;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0,0,0,0.5);
-    transition: 0.5s all ease;
+	.Wallop-buttonPrevious,
+	.Wallop-buttonNext {
+	    position: absolute;
+	    bottom: 50px;
+	    display: block;
+	    cursor: pointer;
+	    width: 50px;
+	    height: 50px;
+	    background-color: rgba(0,0,0,0.5);
+	    transition: 0.5s all ease;
+		z-index: 3;
+		border: 2px solid #FFF;
 	}
-	.prev:hover,
-	.next:hover {
-		background-color: $teal;
+	.Wallop-buttonPrevious:hover,
+	.Wallop-buttonNext:hover {
+		background-color: $red;
 	}
-	.prev {
-	    right: 50px;
-	}
-
-	.next {
-	    right: 0;
+	.Wallop-buttonPrevious {
+	    left: 50px;
 	}
 
-	.next svg,
-	.prev svg {
+	.Wallop-buttonNext {
+	    left: 98px;
+	}
+
+	.Wallop-buttonPrevious svg,
+	.Wallop-buttonNext svg {
 	    width: 25px;
-		height: 50px;
+		height: 46px;
 		fill: #FFFFFF;
 		display: block;
 		margin: 0 auto;
 	}
 
-	.prev:hover svg,
-	.next:hover svg {
-		// fill: $teal;
+	.Wallop-buttonPrevious:hover svg,
+	.Wallop-buttonNext:hover svg {
+		// fill: $red;
 	}
 }
 
-@media screen and (max-width: 1360px) {
-	.slide {
-		padding-top: 50%;
+/* Form */
+.home-banner form {
+	@supports (display: flex) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 -1%;
 	}
 }
 
-@media screen and (max-width: 800px) {
-	.slide {
-		padding-top: 0%;
+.home-banner form label {
+	display: block;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: bold;
+	margin: 0 0 4px 0;
+	margin: 0 0 0.25rem 0;
+}
+
+.home-banner form .field {
+	margin: 10px 1%;
+	float: left;
+	width: 23%;
+
+	@supports (display: flex) {
+		flex-basis: 23%;
+		margin: 10px 1%;
+		width: auto;
 	}
-	.home-banner .slide .image {
+}
+
+.home-banner form .field.larger {
+	margin: 10px 1%;
+	float: left;
+	width: 48%;
+
+	@supports (display: flex) {
+		flex-basis: 48%;
+		margin: 10px 1%;
+		width: auto;
+	}
+}
+
+.home-banner form .extra-fields {
+	text-align: left;
+	transition: 0.5s all ease;
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+
+	@supports (display: flex) {
+		display: flex;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+	}
+}
+
+.home-banner form .extra-fields.show {
+	opacity: 1;
+	visibility: visible;
+	height: 105px;
+}
+
+.home-banner form .field.showmore {
+	width: 98%;
+
+	@supports (display: flex) {
+		width: auto;
+	}
+}
+
+.home-banner form input,
+.home-banner form select,
+.home-banner form button[type="submit"] {
+	display: block;
+	width: 100%;
+	line-height: 20px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	padding: 15px 15px;
+	border: 2px solid #FFF;
+	height: 54px;
+	box-shadow: 0px 0px 20px rgba(255,255,255,0.5);
+	color: #000;
+}
+
+.home-banner form input[type="text"]:focus,
+.home-banner form select:focus {
+	border-color: #55d0ff;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 20px rgba(85, 208, 255, 0.35);
+    box-shadow: 0px 0px 20px rgba(85, 208, 255, 0.35);
+}
+
+.home-banner form button[type="submit"] {
+	background-color: $red;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.home-banner form button.moreoptions {
+	font-weight: bold;
+	position: relative;
+	padding: 10px 36px 10px 10px;
+	line-height: 20px;
+	line-height: 1.25rem;
+}
+
+.home-banner form button.moreoptions:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+	transition: 0.5s all ease;
+}
+
+.home-banner form button.moreoptions .less {
+	display: none;
+}
+
+.home-banner form button.moreoptions.toggled .less {
+	display: inline;
+}
+
+.home-banner form button.moreoptions.toggled .more {
+	display: none;
+}
+
+.home-banner form button.moreoptions.toggled svg {
+	transform: rotate(180deg);
+}
+
+.home-banner form button.moreoptions svg {
+	display: block;
+	width: 20px;
+	height: 20px;
+	fill: #FFF;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.home-banner form button.moreoptions:hover svg {
+	animation: flow 1 0.5s ease;
+}
+
+.home-banner form button.moreoptions.toggled:hover svg {
+	animation: none;
+}
+
+@keyframes flow {
+	0% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	51% {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 64em) {
+	.home-banner .overlay {
+		padding: 140px 0;
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		z-index: 2;
+	}
+	.home-banner .overlay .overlay-content {
 		position: static;
-		padding-top: 30%;
+		transform: none;
 	}
-	.slide .overlay {
-		position: static;
-	}
-	.slide .overlay .row,
-	.slide .overlay .columns {
-		padding: 0;
-		margin: 0;
+	.home-banner .Wallop,
+	.home-banner .Wallop-list {
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
-		position: static;
+		height: 100%;
 	}
-	.slide .overlay .caption {
-		border-radius: 0;
+	.home-banner .Wallop-item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.home-slide {
+		padding: 0;
+		height: 100%;
 	}
 }
 
-@media screen and (max-width: 800px) {
-	.home-banner .slide .image {
-		padding-top: 50%;
+@media screen and (max-width: 74em) {
+	.home-banner .logo {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 42em) {
+	.home-banner form .field,
+	.home-banner form .field.larger {
+		flex-basis: 98%;
+	}
+	.home-banner .overlay {
+		padding: 100px 0 140px 0;
+	}
+	.home-banner h1 {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+	.home-banner form .extra-fields.show {
+		height: 419px;
 	}
 }

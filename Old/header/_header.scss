@@ -1,0 +1,259 @@
+header {
+	background: $red;
+    box-shadow: 0 1px 2px rgba(92,97,99,0.25);
+    position: relative;
+	border-bottom: 2px solid #FFF;
+}
+
+/* Header Top Bar */
+header .top {
+    background-color: #32393d;
+	border-bottom: 2px solid #FFF;
+    color: #FFFFFF;
+}
+
+header .contain {
+	width: 100%;
+
+    @supports (display: flex) {
+        display: flex;
+    }
+}
+
+/* Right aligned items */
+header .top .right-items {
+	float: right;
+
+    @supports (display: flex) {
+        margin-left: auto;
+    }
+}
+
+header .top .search-field {
+    float: left;
+    position: relative;
+}
+
+/* Social */
+header .top .social {
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+header .top .social li {
+    float: left;
+}
+
+header .top .social li a {
+    display: block;
+    padding: 14px 10px;
+}
+
+header .top .social li a svg {
+    fill: #FFF;
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+header .top .social li a:hover svg {
+    fill: #FFF;
+}
+
+/* Search */
+header .top .search-field {
+    float: left;
+    position: relative;
+}
+
+header .top .search-field input[type="search"] {
+    background: #212527;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    line-height: 2.85rem;
+    padding: 0 80px 0 20px;
+    width: 120px;
+	height: 44px;
+
+    &:focus {
+      outline: none;
+      border-color: $red;
+      box-shadow: 0px 0px 3px $red;
+    }
+
+    &::-webkit-input-placeholder { color: #FFF; }
+    &:-moz-placeholder { color: #FFF; }
+    &::-moz-placeholder { color: #FFF; }
+    &:-ms-input-placeholder { color: #FFF; }
+}
+
+header .top .search-field button {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+
+    svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+      fill:  #FFFFFF;
+    }
+}
+
+header .top .phone {
+    display: inline-block;
+    // float: right;
+    background-color: $red;
+    color: #FFF;
+    font-weight: bold;
+    padding: 0 20px 0 46px;
+    text-decoration: none;
+    position: relative;
+
+    font-size: 1.125rem;
+    border: 2px solid $red;
+    line-height: 40px;
+
+    &:hover {
+      background-color: $red;
+      border-color: $red;
+    }
+}
+
+header .top .phone svg {
+    fill: #FFF;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 20px;
+}
+
+/* Above nav */
+header .top nav {
+	float: left;
+}
+
+header .top nav li {
+	float: left;
+}
+
+header .top nav li a {
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	line-height: 24px;
+	padding: 10px;
+}
+
+/* Below */
+header .below {
+    padding: 0;
+    background-color: $red;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+header .below .contain {
+	@supports(display: flex) {
+		justify-content: space-between;
+		align-items: center;;
+	}
+}
+
+/* Buttons */
+header .button {
+	float: left;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: bold;
+	color: #FFF;
+	display: block;
+	padding: 20px;
+	border: 2px solid #FFF;
+	text-decoration: none;
+	position: relative;
+}
+
+header .button:hover,
+header .button:focus {
+	background-color: #FFF;
+	color: $red;
+}
+
+header .button:nth-child(2) {
+	border-left: none;
+}
+
+header .button .amount {
+	display: block;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	border: 2px;
+	width: 30px;
+	height: 30px;
+	line-height: 26px;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	text-align: center;
+	background-color: #1c1c1c;
+	border: 2px solid #FFF;
+	color: #FFF;
+}
+
+header .below .right-items {
+    text-align: right;
+    float: right;
+}
+
+/* Logo */
+header a.logo {
+    display: block;
+    text-decoration: none;
+    float: left;
+    position: relative;
+    margin: 40px 0;
+}
+
+header a.logo .tagline {
+    color: #435158;
+    position: absolute;
+    top: 100%;
+    margin-top: 2px;
+    right: 20px;
+    font-size: 14px;
+}
+
+header a.logo img {
+	display: block;
+	width: 124px;
+	border: 2px solid #FFFFFF;
+}
+
+@media screen and (max-width: 64em) {
+	header .top,
+	header .right-items {
+		display: none;
+	}
+	header a.logo {
+		margin: 20px 0;
+	}
+	header a.logo img {
+		width: 80px;
+	}
+}

@@ -1,0 +1,56 @@
+.map-area {
+	padding-left: 500px;
+	position: relative;
+}
+
+.map-left {
+	padding: 25px 35px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 100%;
+	overflow-y: scroll;
+
+	&::-webkit-scrollbar {
+	    width: 10px;
+		background-color: #d3d8d9;
+	}
+
+	&::-webkit-scrollbar-track {
+	}
+
+	&::-webkit-scrollbar-thumb {
+	  background-color: #566266;
+	  border-radius: 5px;
+	}
+}
+
+.map-area .responsive-map {
+	height: 800px;
+	height: calc(100vh - 292px);
+	min-height: 620px;
+}
+
+.map-right {
+
+}
+
+@media screen and (max-width: 52em) {
+	.map-area .responsive-map {
+		height: 320px;
+	}
+
+	.map-area {
+		padding-left: 0;
+	}
+
+	.map-left {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 100%;
+		height: auto;
+		overflow: visible;
+	}
+}

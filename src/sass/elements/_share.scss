@@ -1,0 +1,35 @@
+/* Share */
+.share {
+	margin: 1em 0;
+	text-align: left;
+}
+.share > div {
+	list-style: none;
+	display: inline-block;
+	margin: 0.5em 0.5em 0 0;
+	padding: 0;
+	vertical-align: top;
+}
+.share .label {
+	line-height: 30px;
+	color: #AAA;
+}
+.share .facebook a svg {
+	fill: #3b5998;
+}
+.share .twitter a svg {
+	fill: #1da1f2;
+}
+
+.share a {
+	fill: #000;
+	width: 30px;
+	height: 30px;
+}
+.share a svg {
+	width: 30px;
+	height: 30px;
+}
+.share li a:hover {
+	fill: #ffffff;
+}

@@ -1,0 +1,521 @@
+.property-banner {
+	padding-top: 50%;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.property-banner .overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 60px 0;
+	background: linear-gradient(to top, rgba(#000,0.5) 0%, rgba(#000, 0));
+	color: #FFF;
+}
+
+.property-banner h1 {
+	font-size: 48px;
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.property-banner p {
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+/* Property Details */
+.property-top {
+	padding: 45px 0;
+	background-color: #f2f2f2;
+}
+
+.property-top .property-info {
+	// float: left;
+	line-height: 24px;
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.property-top .property-info .title {
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: bold;
+
+	span {
+		color: $red;
+	}
+}
+
+.property-top .details {
+	// float: right;
+	font-size: 32px;
+	font-size: 2rem;
+	color: #162a48;
+}
+
+.property-top .details span {
+	display: inline-block;
+	line-height: 32px;
+	margin: 0 15px 0 0;
+	position: relative;
+	padding-left: 36px;
+	color: $red;
+	font-weight: bold;
+}
+
+.property-top .details svg {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -12px;
+	width: 24px;
+	height: 24px;
+	fill: #1c1c1c;
+}
+
+/* Content */
+.property-content {
+	padding: 90px 0;
+}
+
+.description {
+
+}
+
+.description .desc-content {
+	position: relative;
+	max-height: 200px;
+	transition: 0.5s all ease;
+	overflow: hidden;
+}
+
+.description .desc-content.show {
+	max-height: 800px;
+}
+
+.description .desc-content:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(#FFF,0) 0%, rgba(#FFF,1));
+	transition: 0.5s all ease;
+}
+
+.description .desc-content.show:after {
+	height: 0px;
+}
+
+.description .toggler {
+	font-weight: bold;
+	color: $red;
+	font-size: 18px;
+	font-size: 1.125rem;
+	margin: 10px 0;
+}
+
+.info-table {
+	display: table;
+	margin: 50px 0 0 0;
+	padding: 40px 0 0 0;
+	border-top: 1px solid #CCC;
+	width: 100%;
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.info-table .ir-row {
+	display: table-row;
+	width: 100%;
+}
+
+.ir-it {
+	display: table;
+	width: 100%;
+	padding: 10px 10px 10px 0;
+}
+
+.info-table .ir-row > div {
+	display: table-cell;
+	width: 50%;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+/* Sidebar */
+.side {
+	margin: 10px 0;
+}
+
+.side-title {
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+
+.side-content {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.downloads {
+	margin: 20px 0;
+}
+
+a.down-button {
+	background-color: $red;
+	color: #FFF;
+	font-size: 18px;
+	font-size: 1.125rem;
+	display: block;
+	text-align: center;
+	margin: 10px 0;
+	padding: 10px;
+	text-decoration: none;
+	border: 2px solid $red;
+	transition: 0.5s all ease;
+
+	font-weight: bold;
+
+	position: relative;
+
+	span {
+		position: relative;
+		display: inline-block;
+		padding-left: 52px;
+	}
+}
+
+a.down-button svg {
+	fill: #FFF;
+	display: block;
+	width: 52px;
+	height: 52px;
+	margin: 0 5px 0 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -26px;
+	left: 0;
+}
+
+a.down-button:hover {
+	border-color: #1c1c1c;
+	background-color: #1c1c1c;
+}
+
+/* Share */
+.share {
+  font-size: 0;
+  margin: 10px 0;
+}
+
+.share .title {
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+.share li {
+  display: inline-block;
+  margin: 0 1rem 1rem 0;
+}
+
+.share li a {
+    display: block;
+    padding: 0;
+}
+
+.share li a svg {
+    fill: #1c1c1c;
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.share li a.facebook svg {
+    fill: #3b5998;
+}
+
+.share li a.twitter svg {
+    fill: #55acee;
+}
+
+.share li a.message svg {
+    fill: #707b83;
+}
+
+.share li a.linkedin svg {
+	fill: #0077B5;
+}
+
+.share li a:hover svg {
+    fill: $red;
+}
+
+@media screen and (min-width: 64em) {
+	.pc-move {
+		padding-right: 70px;
+	}
+}
+
+/* Gallery */
+.property-gallery {
+	position: relative;
+	z-index: 2;
+	border-bottom: 2px solid #FFF;
+}
+
+.property-gallery {
+	.gallery .slide .mask:before, .gallery .slide .mask:after {
+		background-color: transparent;
+		border: none;
+	}
+	.gallery .slide {
+	}
+	.gallery .slide:after {
+	}
+	.gallery .slide.slick-current {
+	}
+	.gallery .slide.slick-current:after {
+	}
+}
+
+/* Map */
+.responsive-map {
+	height: 520px;
+}
+
+.map-marker {
+	width: 60px;
+	height: 85px;
+	background: url('../img/marker.svg');
+}
+
+/* Agents */
+.agents {
+	padding: 85px 0;
+	background-color: #f2f2f2;
+	color: #1c1c1c;
+	border-top: 2px solid #FFF;
+}
+
+.agents .title {
+	margin: 15px 0 30px 0;
+	color: #1c1c1c;
+	font-size: 32px;
+	font-size: 2rem;
+	line-height: 1.4;
+}
+
+.agents .side {
+	margin: 15px 0 30px 0;
+	color: #1c1c1c;
+}
+
+.agents .info {
+	font-size: 18px;
+	line-height: 1.4;
+	font-size: 1.125rem;
+	margin: 10px 0;
+}
+
+.agents .info strong {
+	font-weight: bold;
+}
+
+.agents .go-button {
+	display: block;
+	text-decoration: none;
+	background-color: $red;
+	color: #FFF;
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 36px;
+	padding: 10px 18px;
+	border: 2px solid $red;
+	margin: 10px 0;
+	position: relative;
+	font-weight: bold;
+	text-align: center;
+
+	span {
+		position: relative;
+		padding-left: 28px;
+		display: inline-block;
+	}
+
+	svg {
+		fill: #FFF;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: -10px;
+		width: 20px;
+		height: 20px;
+	}
+
+	&:hover {
+		background-color: transparent;
+		color: $red;
+
+		svg {
+			fill: $red;
+		}
+	}
+}
+
+.agents .agent-logo {
+	display: inline-block;
+	color: $red;
+	text-decoration: none;
+	position: relative;
+	margin: 10px 0;
+
+	svg {
+		display: block;
+		width: 60px;
+		height: 60px;
+		fill: $red;
+	}
+
+	.name {
+		color: $red;
+		line-height: 60px;
+		font-size: 24px;
+		font-size: 1.5rem;
+		position: absolute;
+		left: 100%;
+		top: 0;
+		padding-left: 20px;
+		margin-left: 20px;
+		border-left: 1px solid $red;
+	}
+}
+
+.agents .agent {
+	margin: 15px 0;
+	background-color: #FFF;
+	color: #1c1c1c;
+	position: relative;
+	transition: all 0.3s ease;
+}
+
+.agents .agent:hover {
+	box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.25);
+}
+
+.agents .agent .image {
+	display: block;
+
+	background-color: #1c1c1c;
+
+	background-position: center;
+	background-size: cover;
+
+	img {
+		display: block;
+	}
+}
+
+.agents .agent .cont {
+
+	position: relative;
+	border: 1px solid #ced2d5;
+	border-top: none;
+}
+
+.agents .agent .cont .text-holder {
+	padding: 30px 30px 5px 30px;
+}
+
+.agents .agent .cont .button-holder {
+	padding: 5px 30px 30px 30px;
+	font-size: 0;
+}
+
+.agents .agent .name {
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: bold;
+
+	a {
+		color: #1c1c1c;
+		text-decoration: none;
+
+		&:hover {
+			color: $red;
+		}
+	}
+}
+
+.agents .agent .phone {
+
+}
+
+.agents .agent .call {
+	font-size: 18px;
+	font-size: 1.125rem;
+	position: relative;
+	padding-left: 24px;
+	margin: 10px 0;
+}
+
+.agents .agent .call .icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.button-holder .agent-button {
+	float: left;
+	display: block;
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 36px;
+	padding: 10px 18px;
+	margin: 10px 10px 0 0;
+	position: relative;
+	font-weight: bold;
+	text-decoration: none;
+
+	color: #fff;
+	background-color: $red;
+	border: 2px solid $red;
+
+	span {
+		display: inline-block;
+	}
+
+	svg {
+		fill: #fff;
+		position: absolute;
+		top: 50%;
+		left: 18px;
+		margin-top: -10px;
+		width: 20px;
+		height: 20px;
+	}
+
+	&:hover {
+		background-color: #FFF;
+		color: $red;
+
+		svg {
+			fill: $red;
+		}
+	}
+}
+
+.button-holder .agent-button.withicon {
+	padding: 10px 18px 10px 46px;
+}

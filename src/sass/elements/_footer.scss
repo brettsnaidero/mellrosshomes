@@ -1,17 +1,28 @@
 footer {
-    background-color: #f6f7f7;
-    padding: 60px 0;
+    background-color: #1c1c1c;
+    padding: 60px 0 120px 0;
 }
 
 footer p {
     // border-bottom: 1px solid #93959d;
-    color: #9d9ea5;
+    color: #c5c5c5;
+	margin: 10px 0;
+}
+
+footer .logo {
+	display: inline-block;
+	border: 2px solid #FFF;
+	width: 100px;
+	margin: 20px 0 10px 0;
+}
+
+footer .logo:hover {
+	background-color: $red;
 }
 
 /* Social */
 footer .social {
   font-size: 0;
-  text-align: left;
 }
 
 footer .social li {
@@ -21,31 +32,63 @@ footer .social li {
 
 footer .social li a {
     display: block;
-    padding: 0.375rem;
+    padding: 0;
 }
 
 footer .social li a svg {
-    fill: #3e4a5a;
+    fill: #ffffff;
     display: block;
-    width: 26px;
-    height: 26px;
+    width: 20px;
+    height: 20px;
 }
 
 footer .social li a:hover svg {
-    fill: $purple;
+    fill: $red;
 }
 
 /* Footer nav */
 footer h3 {
-  color: $purple;
-  margin: 0.5rem 0 1rem 0;
+  color: #ffffff;
+  margin: 20px 0 20px 0;
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 footer nav li {
-  margin: 0.5rem 0;
+  margin: 20px 0;
+  line-height: 18px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 footer nav li a {
-  color: $black;
+  color: #ffffff;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+	  color: $red;
+  }
+}
+
+@media screen and (min-width: 64em) {
+	footer .align-right {
+		text-align: right;
+	}
+	footer .social {
+		text-align: right;
+	}
+	footer .social li {
+		margin: 0 0 1rem 1rem;
+	}
+}
+@media screen and (max-width: 42em) {
+	footer {
+		padding: 30px 0 60px 0;
+	}
 }

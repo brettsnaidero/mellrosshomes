@@ -1,4 +1,4 @@
-$main-colour: $teal;
+$main-colour: $red;
 
 * {
   box-sizing: border-box;
@@ -6,19 +6,19 @@ $main-colour: $teal;
 }
 
 /* Enquiry Form */
-form {
+.custom-form {
     margin: 16px 0px;
     margin: 1rem 0rem;
     padding: 20px 32px;
     padding: 1.25rem 2rem;
     background: #FFFFFF;
     border-radius: 2px;
-  border: 1px solid #ddd;
+	border: 1px solid #ddd;
     color: #222222;
 }
 
 /* Overrides Foundation */
-form fieldset {
+fieldset {
   border: none;
   padding: 0;
   margin: 0;
@@ -26,7 +26,7 @@ form fieldset {
 }
 
 /* Messages (eg. Validation Messages) */
-form .message {
+.custom-form .message {
   padding: 8px 12px;
   padding: 0.5rem 0.75rem;
   margin: 12px 0px;
@@ -51,7 +51,7 @@ form .message {
   }
 }
 
-form {
+.custom-form {
     /* Middle Column - Basic Styles */
     .middleColumn {
         position: relative;

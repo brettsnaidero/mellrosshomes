@@ -1,0 +1,131 @@
+/* Home Call to actions */
+.home-blog {
+	margin: 140px 0;
+    background-color: #FFFFFF;
+}
+
+.home-blog .title {
+	font-size: 32px;
+	font-size: 2rem;
+	margin: 0 0 32px 0;
+	margin: 0 0 2rem 0;
+}
+
+.home-blog .image {
+  position: relative;
+  width: 60%;
+  float: right;
+  margin-top: -50px;
+
+  img {
+	  position: relative;
+	  z-index: 2;
+  }
+}
+
+.home-blog .image a.more-button {
+	position: absolute;
+	top: -40px;
+	right: 32px;
+	right: 2rem;
+	border: 2px solid rgba(#ced2d5,0.5);
+	padding: 10px 20px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	text-decoration: none;
+	color: #1c1c1c;
+	font-weight: bold;
+	text-transform: uppercase;
+	z-index: 3;
+}
+
+.home-blog .image a.more-button:hover,
+.home-blog .image a.more-button:focus {
+	background-color: $red;
+	border-color: $red;
+	color: #FFF;
+}
+
+.home-blog .hb-content {
+	width: 40%;
+	position: relative;
+	z-index: 3;
+	border: 2px solid #1c1c1c;
+	border-right: none;
+	padding: 40px;
+	float: left;
+}
+
+.home-blog .hb-content:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	bottom: 0;
+	width: 10%;
+	border: 2px solid #FFF;
+	border-left: none;
+}
+
+.home-blog .hb-content h2 {
+	font-size: 40px;
+	font-size: 2.5rem;
+	line-height: 1.4;
+	font-weight: bold;
+}
+
+.home-blog .hb-content h2 a {
+	color: #1c1c1c;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $red;
+	}
+}
+
+.home-blog .hb-content .date {
+	text-transform: uppercase;
+	margin: 10px 0 10px 0;
+	color: #757575;
+	font-weight: bold;
+}
+
+.home-blog .hb-content p {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.home-blog .hb-content a.go-button {
+	position: absolute;
+	top: 100%;
+	left: -2px;
+	border: 2px solid #1c1c1c;
+	padding: 20px 40px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	text-decoration: none;
+	color: $red;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.home-blog .hb-content a.go-button:hover,
+.home-blog .hb-content a.go-button:focus {
+	background-color: $red;
+	color: #FFF;
+}
+
+@media screen and (max-width: 64em) {
+	.home-blog .image {
+		margin: 0;
+		width: auto;
+		float: none;
+	}
+	.home-blog .hb-content {
+		width: auto;
+		float: none;
+		border: 2px solid #1c1c1c;
+		border-top: none;
+	}
+}

@@ -3,8 +3,9 @@
   font-family: sans-serif;
 }
 
-$paragraph-colour: #6d7073;
-$header-colour: $teal;
+$paragraph-colour: #1c1c1c;
+$header-colour: $red;
+$margin: 30px;
 
 /* Content */
 @mixin content {
@@ -22,58 +23,61 @@ $header-colour: $teal;
 
     h1, h2, h3 {
         line-height: 1.2;
-    color: $header-colour;
+    	color: $header-colour;
     }
 
-    h4, h5, h6 {
-        font-weight: 600;
-    }
+	h1, h2, h3, h4, h5, h6 {
+		& + p {
+			margin-top: $margin / 2;
+		}
+	}
 
     h1 {
         font-size: 2.5em;
-        font-weight: 600;
-        margin-top: 0.55em;
-        margin-bottom: 0.55em;
+        font-weight: bold;
+        margin-top: $margin;
+        margin-bottom: $margin / 2;
     }
 
     h2 {
         font-size: 2em;
-        font-weight: 600;
-        margin-top: 0.67em;
-        margin-bottom: 0.67em;
+        font-weight: bold;
+        margin-top: $margin;
+        margin-bottom: $margin / 2;
     }
 
     h3 {
-        font-size: 1.675em;
-        font-weight: 600;
-        margin-top: 0.9em;
-        margin-bottom: 0.9em;
+        font-size: 1.75em;
+        font-weight: bold;
+        margin-top: $margin;
+        margin-bottom: $margin / 2;
     }
 
     h4 {
-        font-size: 1.45em;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        font-size: 1.675em;
+        margin-top: $margin;
+        margin-bottom: $margin / 2;
     }
 
     h5 {
-        font-size: 1.25em;
-        margin-top: 1.33em;
-        margin-bottom: 1.33em;
+        font-size: 1.5em;
+        margin-top: $margin;
+        margin-bottom: $margin / 2;
     }
 
     h6 {
-        font-size: 1.125em;
-        margin-top: 1.67em;
-        margin-bottom: 1.67em;
+        font-size: 1.25em;
+        margin-top: $margin;
+        margin-bottom: $margin / 2;
     }
 
     p {
         color: $paragraph-colour;
+		font-size: 18px;
         font-size: 1.125em;
         line-height: 1.6;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        margin-top: $margin;
+        margin-bottom: $margin;
     }
 
     img {

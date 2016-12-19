@@ -1,4 +1,4 @@
-$sidebar-colour: $teal;
+$sidebar-colour: $red;
 
 /*  Sidebar Navigation */
 .sidebar-nav {
@@ -13,7 +13,7 @@ $sidebar-colour: $teal;
 }
 
 .sidebar-nav ul li {
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 1px solid #dddddd;
   list-style: none;
 }
 
@@ -25,29 +25,25 @@ $sidebar-colour: $teal;
 
 .sidebar-nav ul li.section > a {
   font-weight: bold;
-  background: $sidebar-colour;
-  color: #FFFFFF;
-  border-radius: 3px 3px 0px 0px;
-  border-bottom: 2px solid #FFFFFF;
+  color: $sidebar-colour;
+  border-bottom: 1px solid $sidebar-colour;
 }
 
 .sidebar-nav ul li a {
   display: block;
   text-decoration: none;
-  padding: 12px;
-  padding: 0.75rem;
-  background-color: #222222;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.25;
+  padding: 16px 0;
+  padding: 1rem 0;
+  color: #222222;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.4;
   transition: all 100ms ease 0s;
   position: relative;
   left: 0px;
-  border-radius: 3px;
 
   &:hover {
-    background-color: $sidebar-colour;
+    color: $sidebar-colour;
   }
 }
 
@@ -71,7 +67,7 @@ $sidebar-colour: $teal;
 /* Second level */
 .sidebar-nav ul li ul {
   padding: 6px 0px;
-  background: #e6e6e6;
+  background: #f8f7f7;
 }
 
 .sidebar-nav ul li ul li {
@@ -88,7 +84,6 @@ $sidebar-colour: $teal;
   color: $sidebar-colour;
   font-weight: 600;
   background-color: transparent;
-  border-radius: 0px;
   border-bottom: none;
 }
 
@@ -96,8 +91,6 @@ $sidebar-colour: $teal;
   background: none;
   color: #555555;
   padding: 6px 12px;
-  font-size: 16px;
-  font-size: 1rem;
 
   &:hover {
     background-color: transparent;

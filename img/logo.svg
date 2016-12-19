@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="25.701" y="22.39" width="71.503" height="74.151"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st0" d="M95.506,22.393L82.59,22.498l0.104,51.268c0,0,1.164,9.849-10.276,11.123H25.701v11.549l51.164,0.104
+		c0,0,20.341-1.06,18.641-22.775V22.393"/>
+	<polygon class="st0" points="64.156,47.285 74.324,47.285 74.324,23.028 64.898,22.923 50.594,32.987 35.76,23.028 26.547,23.028 
+		26.443,47.182 36.825,47.182 37.039,35.21 50.378,44.851 64.156,35.422 	"/>
+	<polygon class="st0" points="64.156,76.732 74.324,76.732 74.324,52.475 64.898,52.371 50.594,62.431 35.76,52.475 26.547,52.475 
+		26.443,76.628 36.825,76.628 37.039,64.656 50.378,74.297 64.156,64.868 	"/>
+</g>
+</svg>

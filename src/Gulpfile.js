@@ -10,35 +10,19 @@ var browserSync = require('browser-sync').create();
 var babel = require('gulp-babel');
 var concat = require('gulp-concat');
 
+var webpack = require('webpack-stream');
+
 // Javascript compile and babel
 gulp.task('js', () => {
-  // return gulp.src([
-  //   './node_modules/lory.js/dist/lory.js',
-  //   './src-js/home.js'
-  // ])
-  //   // .pipe(babel({
-  //   //     presets: [
-  //   // 		'es2015'
-  //   // 	]
-  //   // }))
-  //   .pipe(concat('home.js'))
-  //   .pipe(sourcemaps.write('.'))
-  //   .pipe(gulp.dest('../js'));
-
-  return gulp.src([
-		'./node_modules/svg4everybody/dist/svg4everybody.js',
-		'./src-js/offCanvas.js',
-		'./src-js/page.js',
-    './src-js/home.js'
-	])
-        // .pipe(babel({
-        //     presets: [
-		// 		'es2015'
-		// 	]
-        // }))
-		.pipe(concat('page.js'))
-		.pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('../js'));
+  return gulp.src('./src-js/home.js')
+    .pipe(babel({
+        presets: [
+    		'es2015'
+    	]
+    }))
+    .pipe(concat('home.js'))
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest('../js'));
 });
 
 // SVG Icons

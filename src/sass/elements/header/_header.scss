@@ -1,0 +1,422 @@
+header {
+    position: relative;
+}
+
+/* Header Sticky */
+.header-holder {
+	height: 82px;
+	background-color: #1c1c1c
+}
+
+header.stuck {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	animation: showHeader 0.5s 1 ease;
+}
+
+@keyframes showHeader {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+/* Header Top Bar */
+header .top {
+    background-color: $red;
+	border-bottom: 2px solid #FFF;
+    color: #FFFFFF;
+	position: relative;
+	z-index: 99;
+}
+
+header .contain .flex {
+	width: 100%;
+
+    @supports (display: flex) {
+        display: flex;
+		justify-content: space-between;
+    }
+}
+
+header .below .toggler {
+	display: block;
+	fill: #FFF;
+	width: 100%;
+	padding: 5px;
+	position: absolute;
+	left: 50%;
+    top: 0%;
+    margin-left: -50%;
+	transition: 0.5s width ease, 0.5s margin ease, 0.5s top ease, 0.5s border-color ease, 0.5s background-color ease, 0.5s box-shadow ease, 0.1s background-color ease;
+	border-color: transparent;
+
+	&:focus {
+		outline: none;
+	}
+
+	svg {
+		display: block;
+		margin: 0 auto;
+		width: 20px;
+		height: 20px;
+		transition: 0.5s transform ease, 0.25s top ease 0.25s;
+	}
+}
+
+header .below .toggler.toggled {
+	padding: 5px;
+	top: 100%;
+	left: 50%;
+	margin-top: -2px;
+    margin-left: -20px;
+	width: 40px;
+	border: 2px solid #FFF;
+	background-color: rgba(#1c1c1c,0.8);
+	box-shadow: 0px 0px 10px rgba(#1c1c1c,0.1);
+	transition: 0.5s top ease, 0.5s border-color ease 0.5s, 0.5s background-color ease 0.5s, 0.5s box-shadow ease 0.5s;
+	z-index: -1;
+}
+
+header .below .toggler.toggled svg {
+	transform: rotate(180deg);
+}
+
+header .below .bing {
+	position: relative;
+	// padding-left: 114px;
+	height: 30px;
+	zoom: 1;
+	font-size: 0;
+	transition: 0.5s all ease;
+
+    background-color: rgba(28, 28, 28, 0.8);
+	border-bottom: 2px solid transparent;
+}
+
+header .below .bing .contain {
+	opacity: 0;
+	height: 0;
+	zoom: 1;
+	font-size: 0;
+	visibility: hidden;
+	transition: 0.5s all ease;
+
+	// IE Fix
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+header .below .bing.show .contain {
+	transition: 0.5s all ease 0.25s;
+}
+
+header .below .bing.show {
+	height: 80px;
+	zoom: 1;
+	font-size: 0;
+	border-bottom-color: #FFF;
+}
+
+header .below .bing.show .contain {
+	opacity: 1;
+	height: 80px;
+	zoom: 1;
+	font-size: 0;
+	visibility: visible;
+}
+
+/* Right aligned items */
+header .top .right-items {
+	float: right;
+
+    @supports (display: flex) {
+        margin-left: auto;
+    }
+}
+
+/* Social */
+header .top .social {
+    float: left;
+    margin: 10px 20px;
+}
+
+header .top .social li {
+    float: left;
+}
+
+header .top .social li a {
+    display: block;
+    padding: 20px 10px;
+}
+
+header .top .social li a svg {
+    fill: #FFF;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+header .top .social li a:hover svg {
+    fill: #FFF;
+}
+
+/* Search */
+header .top .search-field {
+    float: left;
+    position: relative;
+	margin: 10px 0;
+	padding: 5px 0;
+}
+
+header .top .search-field input[type="search"] {
+	background: none;
+    background-color: transparent;
+	border: 2px solid transparent;
+    color: #FFFFFF;
+	font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 36px;
+    padding: 0px 36px 0px 0px;
+    width: 110px;
+	height: 46px;
+	transition: 0.5s all ease;
+	cursor: pointer;
+
+    &:focus {
+      outline: none;
+      border-color: #FFF;
+      box-shadow: 0px 0px 3px rgba(255,255,255,0.25);
+	  background-color: #FFF;
+	  color: #1c1c1c;
+	  padding: 0px 50px 0px 14px;
+	  width: 130px;
+	  cursor: default;
+
+	  &::-webkit-input-placeholder { color: #1c1c1c; }
+      &:-moz-placeholder { color: #1c1c1c; }
+      &::-moz-placeholder { color: #1c1c1c; }
+      &:-ms-input-placeholder { color: #1c1c1c; }
+
+
+	  & + button {
+		  right: 16px;
+	  }
+	  & + button svg {
+		  fill: #1c1c1c;
+	  }
+	  & + button:hover svg,
+	  & + button:focus svg {
+		  fill: $red;
+	  }
+    }
+
+    &::-webkit-input-placeholder { color: #FFF; }
+    &:-moz-placeholder { color: #FFF; }
+    &::-moz-placeholder { color: #FFF; }
+    &:-ms-input-placeholder { color: #FFF; }
+}
+
+header .top .search-field button {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+	transition: 0.5s all ease;
+	cursor: pointer;
+
+    svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+      fill:  #FFFFFF;
+	  transition: 0.5s all ease;
+    }
+}
+
+header .top .phone {
+    display: inline-block;
+    // float: right;
+    background-color: $red;
+    color: #FFF;
+    font-weight: bold;
+    padding: 0 20px 0 46px;
+    text-decoration: none;
+    position: relative;
+
+    font-size: 1.125rem;
+    border: 2px solid $red;
+    line-height: 40px;
+
+    &:hover {
+      background-color: $red;
+      border-color: $red;
+    }
+}
+
+header .top .phone svg {
+    fill: #FFF;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 20px;
+}
+
+/* Above nav */
+header .top nav {
+	float: left;
+	margin: 0 20px;
+}
+
+header .top nav li {
+	float: left;
+}
+
+header .top nav li a {
+	display: block;
+	color: #FFF;
+	font-size: 20px;
+	font-size: 1.25rem;
+	text-decoration: none;
+	line-height: 20px;
+	padding: 30px 20px;
+	transition: 0.5s all ease;
+}
+
+header .top nav li.current a {
+	font-weight: bold;
+}
+
+header .top nav li a:hover {
+	background-color: darken($red,5%);
+}
+
+/* Below */
+header .below {
+	padding: 0;
+	// background-color: rgba(#1c1c1c, 0.8);
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+
+	// border-bottom: 2px solid #FFF;
+	box-shadow: 0px 0px 10px rgba(28,28,28,0.25);
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+header .below .contain {
+	@supports(display: flex) {
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+/* Buttons */
+header .button {
+	float: left;
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 30px;
+	color: #FFF;
+	display: block;
+	padding: 5px 10px;
+	border: 2px solid #FFF;
+	text-decoration: none;
+	position: relative;
+	margin: 17px 0 17px 10px;
+
+	&.shortlist {
+		padding-right: 50px;
+	}
+}
+
+header .button:hover,
+header .button:focus {
+	background-color: $red;
+	border-color: #FFF;
+	color: #FFF;
+}
+
+header .button:first-child {
+	margin-left: 0;
+}
+
+header .button .amount {
+	display: block;
+	border: 2px;
+	width: 40px;
+	height: 44px;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 40px;
+	font-weight: bold;
+	text-align: center;
+	background-color: $red;
+	border: 2px solid #FFF;
+	color: #FFF;
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+header .below .right-items {
+    text-align: right;
+    float: right;
+}
+
+/* Logo */
+header a.logo {
+    display: block;
+    text-decoration: none;
+    float: left;
+    position: relative;
+	margin: 8px 0;
+    // margin: -2px 0 -32px 0;
+	background-color: $red;
+}
+
+header a.logo img {
+	display: block;
+	width: 60px;
+	// width: 114px;
+	border: 2px solid #FFFFFF;
+}
+
+@media screen and (max-width: 64em) {
+	header .below,
+	header .top nav,
+	header .right-items {
+		display: none;
+	}
+	header a.logo {
+		margin: 20px 0;
+	}
+	header a.logo img {
+		width: 80px;
+	}
+}

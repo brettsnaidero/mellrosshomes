@@ -1,0 +1,271 @@
+.results-top {
+	margin: 0 0 15px 0;
+}
+
+.results-top .rt-left {
+	float: left;
+}
+
+.results-top .rt-right {
+	float: right;
+	text-align: right;
+	line-height: 32px;
+}
+
+.results-top button {
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 32px;
+	font-weight: bold;
+	padding-left: 22px;
+	position: relative;
+	margin: 0 8px 0 0;
+	color: #929699;
+	outline: none;
+
+	svg {
+		display: block;
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -9px;
+		fill: #929699;
+	}
+}
+
+.results-top .rt-right label {
+	font-size: 18px;
+	font-size: 1.125rem;
+	float: left;
+	line-height: 32px;
+	margin: 0 10px 0 0;
+}
+
+.results-top select {
+	display: block;
+	width: auto;
+	width: 140px;
+	line-height: 32px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	padding: 0 10px;
+	background: #f2f2f2;
+	border: 2px solid #f2f2f2;
+	height: 32px;
+	color: #1c1c1c;
+}
+
+.results-top button.active,
+.results-top button:hover,
+.results-top button:focus {
+	color: #1c1c1c;
+
+	svg {
+		fill: $red;
+	}
+}
+
+/* Filters */
+.search-filters {
+	background-color: #535556;
+	border-bottom: 2px solid #FFF;
+	position: relative;
+
+	background-size: cover;
+	background-position: center;
+
+	.overlay {
+		padding: 30px 0 0 0;
+		// background-color: rgba(#1c1c1c, 0.5);
+	}
+}
+
+/* Form */
+.search-filters form {
+	overflow: hidden;
+	padding: 15px 0;
+
+	@supports (display: flex) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		justify-content: flex-start;
+		align-items: flex-end;
+		margin: 0 -1%;
+	}
+}
+
+.search-filters form label {
+	display: block;
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 1;
+	white-space: nowrap;
+	font-weight: bold;
+	margin: 0 0 8px 0;
+	margin: 0 0 0.5rem 0;
+	color: #FFF;
+}
+
+.search-filters form .field {
+	margin: 10px 1%;
+	float: left;
+	width: 14.666666%;
+
+	@supports (display: flex) {
+		flex-basis: 14.666666%;
+		margin: 10px 1%;
+		width: auto;
+	}
+}
+
+.search-filters form .extra-fields .field {
+	width: 23%;
+
+	@supports (display: flex) {
+		flex-basis: 23%;
+	}
+}
+
+.search-filters form .field.larger {
+	margin: 10px 1%;
+	float: left;
+	width: 64.666666%;
+
+	@supports (display: flex) {
+		flex-basis: 64.666666%;
+		margin: 10px 1%;
+		width: auto;
+	}
+}
+
+.search-filters form .extra-fields {
+	text-align: left;
+	transition: 0.5s all ease;
+	// opacity: 0;
+	// visibility: hidden;
+	// height: 0;
+
+	@supports (display: flex) {
+		display: flex;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+	}
+}
+
+// .search-filters form .extra-fields.show {
+// 	opacity: 1;
+// 	visibility: visible;
+// 	height: 105px;
+// }
+
+.search-filters form input,
+.search-filters form select,
+.search-filters form button[type="submit"] {
+	display: block;
+	width: 100%;
+	line-height: 28px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	padding: 11px 15px;
+	border: 2px solid #FFF;
+	height: 54px;
+	color: #000;
+}
+
+.search-filters form input,
+.search-filters form select {
+}
+
+.search-filters form input:focus,
+.search-filters form select:focus {
+	border-color: #55d0ff;
+	outline: none;
+	box-shadow: 0px 0px 20px rgba(#55d0ff,0.35);
+}
+
+.search-filters form button[type="submit"] {
+	background-color: $red;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.search-filters form .field.showmore {
+	text-align: center;
+
+	width: 12%;
+
+	@supports (display: flex) {
+		flex-basis: 12%;
+		margin: 10px 1%;
+		width: auto;
+	}
+}
+
+.search-filters .showmore button.moreoptions {
+	background-color: #f2f2f2;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	line-height: 20px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	padding: 15px 10px;
+	height: 54px;
+	color: #1c1c1c;
+}
+
+.search-filters .showmore button.moreoptions:hover,
+.search-filters .showmore button.moreoptions:focus {
+	// background-color: $red;
+	// color: #FFF;
+}
+
+.search-filters .showmore button.moreoptions .center {
+	position: relative;
+	padding-right: 20px;
+}
+
+.search-filters .showmore button.moreoptions:focus {
+	outline: none;
+	transition: 0.5s all ease;
+}
+
+.search-filters .showmore button.moreoptions .less {
+	display: none;
+}
+
+.search-filters .showmore button.moreoptions.toggled .less {
+	display: inline;
+}
+
+.search-filters .showmore button.moreoptions.toggled .more {
+	display: none;
+}
+
+.search-filters .showmore button.moreoptions.toggled svg {
+	transform: rotate(180deg);
+}
+
+.search-filters .showmore button.moreoptions svg {
+	display: block;
+	width: 16px;
+	height: 16px;
+	fill: #1c1c1c;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -8px;
+}
+
+.search-filters .showmore button.moreoptions:hover svg {
+	animation: flow 1 0.5s ease;
+}
+
+.search-filters .showmore button.moreoptions.toggled:hover svg {
+	animation: none;
+}

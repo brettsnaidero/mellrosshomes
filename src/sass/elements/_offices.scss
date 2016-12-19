@@ -1,0 +1,126 @@
+.office {
+	margin: 15px 0;
+}
+
+.office-info {
+	padding: 30px;
+	border: 1px solid #ced2d5;
+	border-top: none;
+}
+
+.office-info h2 {
+	color: #1c1c1c;
+	font-size: 24px;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	font-weight: bold;
+	margin: 0;
+
+	a {
+		color: #1c1c1c;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $red;
+		}
+	}
+}
+
+.office-content p {
+	margin: 10px 0;
+}
+
+.office-links a {
+	float: left;
+	display: block;
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 20px;
+	padding: 10px 18px;
+	margin: 10px 10px 0 0;
+	position: relative;
+	font-weight: bold;
+	text-decoration: none;
+
+	color: #fff;
+	background-color: $red;
+	border: 2px solid $red;
+
+	span {
+		display: inline-block;
+	}
+
+	svg {
+		fill: #fff;
+		position: absolute;
+		top: 50%;
+		left: 18px;
+		margin-top: -10px;
+		width: 20px;
+		height: 20px;
+	}
+
+	&:hover {
+		background-color: #FFF;
+		color: $red;
+
+		svg {
+			fill: $red;
+		}
+	}
+}
+
+.office-links a.withicon {
+	padding: 10px 18px 10px 46px;
+}
+
+/* Agent Page */
+.agent-img {
+	margin: 15px 0;
+}
+
+.agent-img img {
+	display: block;
+	width: 100%;
+}
+
+.agent-content h1 {
+	margin: 15px 0 10px 0;
+	font-size: 2.5rem;
+	line-height: 1.2;
+	color: $red;
+	font-weight: bold;
+}
+
+.agent-content .pos {
+	margin: 0 0 20px 0;
+	font-weight: bold;
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+.agent-content .desc {
+	margin: 10px 0 0 0;
+	font-size: 24px;
+	font-size: 1.5rem;
+	padding-left: 32px;
+	position: relative;
+
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-top: -10px;
+		fill: #1c1c1c;
+	}
+
+	a {
+		color: $red;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}

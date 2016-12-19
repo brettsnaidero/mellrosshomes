@@ -6,19 +6,27 @@
 @import 'foundation/_global';
 @include foundation-everything;
 
-body {
-    background-color: #262938;
-    font-family: 'niveau-grotesk', sans-serif;
+* {
+    box-sizing: border-box;
 }
 
-$teal: #3583cc;
-$teal-dark: #008894;
-$purple: #e05896;
-$purple-dark: #5550c8;
+body {
+    background-color: #1c1c1c;
+    font-family: 'Dosis', sans-serif;
+}
+
 $black: #161e20;
+
+$red: #cc2026;
 
 .main-area {
     background-color: #FFF;
+}
+
+@media screen and (min-width: 800px) {
+  .mainstuff {
+    padding-right: 2rem;
+  }
 }
 
 svg {
@@ -29,31 +37,70 @@ svg {
 }
 
 /** Elements **/
-@import 'elements/_header';
+@import 'elements/header/_header';
+@import 'elements/header/_mainnav';
 @import 'elements/_footer';
 @import 'elements/_listings';
 @import 'elements/_homebanner';
 @import 'elements/_mobilemenu';
 @import 'elements/_homebits';
-@import 'plugins/_lory';
+@import 'elements/_sidebarnav';
+
+@import 'elements/_basic';
+@import 'elements/_property';
+@import 'elements/_offices';
 
 @import 'elements/_breadcrumbs';
 @import 'elements/_content';
 @import 'elements/_form';
-@import 'elements/_sidebarnav';
+@import 'elements/_search';
+@import 'elements/_pagination';
 
+@import 'elements/_mapresults';
+@import 'elements/_blog';
+@import 'elements/_share';
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .desktop-clear {
   clear: both;
 }
 
-a.grad-button {
-  display: inline-block;
-  padding: 16px 20px;
-  background: linear-gradient(45deg, #e05896 0%, #3583cc 100%);
-  color: #FFF !important;
-  text-decoration: none;
-  font-size: 1.25em;
-  margin: 1em 0;
-  text-decoration: none !important;
+.visually-hide {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px; width: 1px;
+	margin: -1px; padding: 0; border: 0;
+}
+
+@import 'plugins/_wallop';
+@import 'plugins/_slick';
+@import 'plugins/_pushy';
+
+/* Show Things */
+.js .iseeyou,
+.js .iseeyou {
+	opacity: 0;
+}
+
+.js .iseeyou.active,
+.js .iseeyou.active {
+	animation: showThing 0.5s ease 1;
+	opacity: 1;
+}
+
+@keyframes showThing {
+	0% {
+		opacity: 0;
+		// transform: translateY(-100px);
+	}
+	100% {
+		opacity: 1;
+		// transform: translateY(0px);
+	}
 }
